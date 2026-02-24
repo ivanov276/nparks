@@ -1,0 +1,106 @@
+﻿
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8;" >
+        <meta name="description" content="Изоставени училища">
+        <meta name="keywords" content="Училища, изоставени, образование, обучение, ученици, учители">
+        <meta name="author" content="Teodor Hadzhiyski, Dimitar Tagarev">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" REL="stylesheet" href="style/style.css">
+        <link type="text/css" REL="stylesheet" href="style/blajievo.css">
+        <title>izostaveni ychilishta/ychilista</title>
+    </head>
+    <body>
+        <header>
+            
+            <div id="headerPicture">
+                <div id="slider">
+                    <figure>
+                            <img src="Picture/egvhod.jpg" height="300">
+                            <img src="Picture/egdvor.jpg" height="300">
+                            <img src="Picture/eglogo.png" height="300">
+                            <img src="Picture/egstaro.jpg" height="300">
+                            <img src="Picture/egsalon.jpg" height="300">
+                    </figure>
+                </div>
+            </div>
+            <div id="headerPictureFont">
+                <div id="slider">
+                    <figure>
+                            <img src="Picture/egvhod.jpg" height="480">
+                            <img src="Picture/egdvor.jpg" height="480">
+                            <img src="Picture/egsgrada.jpg" height="480">
+                            <img src="Picture/egstaro.jpg" height="480">
+                            <img src="Picture/egsalon.jpg" height="480">
+                    </figure>
+                </div>
+            </div>
+            <div id= "navContainer"class="navContainer">
+                <div id="navBar">
+                    <div id="navButton" onclick="location.href='index.html'"><a href="javascript:void(0)">Начало</a></div>
+                    <div id="navButton" onclick="location.href='blajievo.html'"><a href="javascript:void(0)">село Блажиево</a></div>
+                    <div id="navButton" onclick="location.href='mursalevo.html'"><a href="javascript:void(0)">село Мурсалево</a></div>
+                    <div id="navButton" onclick="location.href='buranovo.html'"><a href="javascript:void(0)">село Бураново</a></div>
+                    <div id="navButton" onclick="location.href='ychilista.html'" class="onPageButton"><a href="javascript:void(0)">Училищата днес</a></div>
+                    <div id="navButton" onclick="location.href='kontakti.html'"><a href="javascript:void(0)">За нас</a></div>
+                </div>
+            </div>
+                        
+        </header>
+        <main id="mainPaddingAdd">
+            <h1>Училищата през XXI век</h1>
+            <p>Стабилизирането на държавния бюджет след войните се отразява положително на българското образование. 
+                Държавата започва да строи училищни сгради. Увеличават се заплатите на учителите.  Изменя се учебната
+                програма и започват да навлизат нови технологии в обучението. Включват се учениците в процеса на 
+                преподаване на уроците, като се изготвят презентации и интерактивни уроци. Училищните сгради се оборудват 
+                с кабинети по информационни технологии, по немски и английски език, а не само по природните науки. 
+            </p>
+            <h1>Какво се случва с материалната база на училищата след закриването им?</h1>
+            <br>
+            <table>
+                <tr>
+                    <td><p style="padding-right: 30px;">По- рационален начин за съдбата на закритите училищни сгради е
+                        след затварянето на учебно заведение, запустялата сграда се предоставя на друго училище или университет. 
+                        Например изоставената сграда на Механотехникума в град Благоевград се предостави на ЮЗУ.За съжеление тази благоприятна 
+                        съдба може да последват училищата в по- големите градове. Закритите учебни заведения в селата запустяват и се разрушават. 
+                        Учебните помагала, закупените материали за часовете по природни науки и физическо възпитание изгниват, вместо да 
+                        бъдат предоставени на някое училище, което има нужда от тях за обучението на неговите възпитаници.
+                    </p></td>
+                    <td><img src="Picture/gnie1.jpg" style="padding-left: 30px;"></td>
+                </tr>
+            </table>
+            <br> <br> <br> <br> <br>
+            <table id="tablePictures" style="padding-top: 100px;">
+                <tr>
+                    <td><img src="Picture/gnie.jpg"></td>                    
+                    <td><img src="Picture/chimie.jpg"></td>
+                </tr>
+            </table>
+        </main>
+        <div class="mainBackground" style="margin-top: -900px; height: 935px;">
+        </div>
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navContainer = document.getElementById("navContainer");
+            var sticky = navContainer.offsetTop;
+            var mainPaddingAdd = document.getElementById("mainPaddingAdd");
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navContainer.classList.add("sticky");
+                mainPaddingAdd.classList.add("mainPaddingAdd");
+              }
+              else {
+                navContainer.classList.remove("sticky");
+                mainPaddingAdd.classList.remove("mainPaddingAdd");
+                }
+            }
+        </script>
+        <footer>
+            <strong>Изоставени училища</strong> <br>
+            <strong> &copy; Теодор Хаджийски, Димитър Тагарев</strong>
+        </footer>
+    </body>
+</html>

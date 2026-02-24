@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8;" >
+        <meta name="description" content="Изоставени училища">
+        <meta name="keywords" content="Училища, изоставени, образование, обучение, ученици, учители">
+        <meta name="author" content="Teodor Hadzhiyski, Dimitar Tagarev">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" REL="stylesheet" href="style/style.css">
+        <link type="text/css" REL="stylesheet" href="style/blajievo.css">
+        <title>Central Balkan National Park</title>
+    </head>
+    <body>
+        <header>
+            <div id="headerPicture">
+                <div id="slider">
+                    <figure>
+                        <img src="Picture/centralpic1.jpg">
+                        <img src="Picture/centralpic3JPG.jpg">
+                        <img src="Picture/centralpic2.jpg"height="300">
+                    </figure>
+                </div>
+            </div>
+            <div id="headerPictureFont">
+                <div id="slider">
+                    <figure>
+                        <img src="Picture/centralpic1.jpg">
+                        <img src="Picture/centralpic3JPG.jpg">
+                        <img src="Picture/centralpic2.jpg">
+                    </figure>
+                </div>
+            </div>
+            <div id= "navContainer"class="navContainer">
+                <div id="navBar">
+                    <div id="navButton" onclick="location.href='index.html'"><a href="javascript:void(0)">Home</a></div>
+                    <div id="navButton" onclick="location.href='centralbalkanpark.html'" class="onPageButton"><a href="javascript:void(0)">Central Balkan National Park</a></div>
+                    <div id="navButton" onclick="location.href='rilanationalpark.html'"><a href="javascript:void(0)">Rila National Park</a></div>
+                    <div id="navButton" onclick="location.href='pirinnationalpark.html'"><a href="javascript:void(0)">Pirin National Park</a></div>
+                </div>
+            </div>                        
+        </header>
+        <main id="mainPaddingAdd">
+            
+            <h1>Central Balkan National Park</h1>
+            <table style="width: 100%;">
+                <tr>
+                  <td> 
+                    <p id="text1"> The Central Balkan National Park (Bulgarian: Национален парк Централен Балкан) is a national park in the heart of Bulgaria, nestled in the central and higher portions of the Balkan Mountains. Its altitude varies from 550 metres (1,800 ft) near the town of Karlovo to 2,376 metres (7,795 ft) at Botev Peak, the highest summit in the range. It was established on 31 October 1991. 
+                    </p>
+                    </td>                
+                    <td><img src="Picture/centralpic1.jpg" style="padding-left: 30px;"></td>
+                </tr>
+            </table>
+            <br><br><br>
+            <h1>History</h1>
+            <br><br>
+            <table style="width: 100%;">
+                    <tr>
+                        <td id="materialnaBazaHolder">
+                            <div id="materialnaBaza">
+                                <h2>Establishment</h2>
+                                <p> The Central Balkan National Park was established in 1991 to conserve the unique natural scenery and heritage of this area and protect the customs and livelihood of the local population. The Park Directorate, a regional body of the Ministry of the Environment and Waters, manages the Park. The Directorate engages local organizations, volunteers, and mountain enthusiasts in pursuing its goals. </p>
+                            </div>
+                        </td>
+                        <td><img src="Picture/centralpic2.jpg"></td>
+                        <td><img src="Picture/centralpic3.png"></td>
+                    </tr>
+            </table>
+            <br><br><br><br>
+            </table>
+            <br><br><br><br>
+            <h2 id="text1"> Park statistics</h2>
+            <p id="text1">Area: 71,669.5 hectares
+Total length: 85 km
+Average width: 10 km
+Highest peak: Botev Peak at 2,376 meters above sea level
+Lowest elevation: near Karlovo, about 500 meters above sea level
+Wooded area: 44,000.8 hectares
+Treeless area: 27,668.7 hectares
+70% of all ecosystems are natural
+There are 9 nature reserves, with a combined area of 20,019 hectares 
+            </p>
+        </main>
+        <div class="mainBackground" style="margin-top: -1240px; height: 1275px;">
+        </div>
+    <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navContainer = document.getElementById("navContainer");
+            var sticky = navContainer.offsetTop;
+            var mainPaddingAdd = document.getElementById("mainPaddingAdd");
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navContainer.classList.add("sticky");
+                mainPaddingAdd.classList.add("mainPaddingAdd");
+              }
+              else {
+                navContainer.classList.remove("sticky");
+                mainPaddingAdd.classList.remove("mainPaddingAdd");
+                }
+            }
+    </script>
+    </body>
+</html>

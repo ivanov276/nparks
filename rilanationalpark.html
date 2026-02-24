@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8;" >
+        <meta name="description" content="Изоставени училища">
+        <meta name="keywords" content="Училища, изоставени, образование, обучение, ученици, учители">
+        <meta name="author" content="Teodor Hadzhiyski, Dimitar Tagarev">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" REL="stylesheet" href="style/style.css">
+        <link type="text/css" REL="stylesheet" href="style/mursalevo.css">
+        <title>izostaveni ychilishta/mursalevo</title>
+    </head>
+    <body>
+        <header>    
+            <div id="headerPicture">
+                <div id="slider">
+                    <figure>
+                        <img src="Picture/7rilalakes.jpg" height="480">
+                        <img src="Picture/Dautov_vrah.jpg" height="480">
+                        <img src="Picture/Kamenitsa.jpg" height="480">
+                    </figure>
+                </div>
+            </div>
+            <div id="headerPictureFont">
+                <div id="slider">
+                    <figure>
+                        <img src="Picture/7rilalakes.jpg" height="480">
+                        <img src="Picture/Dautov_vrah.jpg" height="480">
+                        <img src="Picture/Kamenitsa.jpg" height="480">
+                    </figure>
+                </div>
+            </div>
+            <div id= "navContainer" class="navContainer">
+                <div id="navBar">
+                    <div id="navButton" onclick="location.href='index.html'"><a href="javascript:void(0)">Home</a></div>
+                    <div id="navButton" onclick="location.href='centralbalkanpark.html'"><a href="javascript:void(0)">Central Balkan National Park</a></div>
+                    <div id="navButton" onclick="location.href='rilanationalpark.html'" class="onPageButton"><a href="javascript:void(0)">Rila National Park</a></div>
+                    <div id="navButton" onclick="location.href='pirinnationalpark.html'"><a href="javascript:void(0)">Pirin National Park</a></div>
+                </div>
+            </div>
+        </header>
+        <main id="mainPaddingAdd">
+            
+            <h1>Rila National Park</h1>
+            <br>
+            <table style="width: 100%;">
+                <td>
+                    <p style="padding-right: 30px;">It was established on 24 February 1992 to protect several ecosystems of national importance. Its altitude varies from 800 m (2,600 ft) near Blagoevgrad to 2,925 m (9,596 ft) at Musala Peak, the highest summit in the Balkan Peninsula. The park has 120 glacial lakes, including the prominent Seven Rila Lakes. Many rivers have their source in the national park, including the river that carries the most water entirely within the Balkans (the Maritsa river) and the longest river entirely within Bulgaria (the Iskar river).
+
+The national park occupies territory of 4 of the 28 provinces of the country: Sofia, Kyustendil, Blagoevgrad and Pazardzhik. It includes four nature reserves: Parangalitsa, Central Rila Reserve, Ibar and Skakavitsa.
+
+Rila National Park is among the largest and most valuable protected areas in Europe. The International Union for Conservation of Nature (IUCN) has listed the park as Category II. Two of the four nature reserves are included in the UN list of Representative Protected Areas, and four of the nature reserves are included in the World Network of Biosphere Reserves under the UNESCO Man and Biosphere Programme.
+                    </p>
+                </td>                
+                <td><img src="Picture/rilaparkmap.png" style="padding-left: 30px;"></td>
+            </tr>
+            </table>
+            <br>
+            <h1>Important Details</h1>
+            <table id="table1">
+                <tr>            
+                    <td><div id="osnUchHrbotev">
+                    <p style="padding-right: 30px;">
+                       The park falls within the Rodope montane mixed forests terrestrial ecoregion of the Palearctic temperate broadleaf and mixed forest. Forests occupy 534.81 km2 (206.49 sq mi; 132,150 acres) or 66% of the total area. There are approximately 1,400 species of vascular plants, 282 species of mosses and 130 species of freshwater algae. The fauna is represented by 48 species of mammals, 99 species of birds, 20 species of reptiles and amphibia and 5 species of fish, as well as 2,934 species of invertebrates, of which 282 are endemic.
+                    </p></td>              
+                    <td><img src="Picture/7rilalakes.jpg" width="550"></td>
+                </tr>
+            </table> 
+                <P style="padding-top: 40px;"> </P> </div>       
+            <table id="table2">
+                <tr>
+                    <td><img src="Picture/murstaq1.jpg"></td>
+                    <td><img src="Picture/murkoridor.jpg"></td>
+                    <td><img src="Picture/murstaq.jpg"></td>
+                    <td><img src="Picture/murvrata.jpg"></td>
+                </tr>
+            </table>
+        </main>
+        <div class="mainBackground" style="margin-top: -1200px; height: 1234px;">
+        </div>
+    <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navContainer = document.getElementById("navContainer");
+            var sticky = navContainer.offsetTop;
+            var mainPaddingAdd = document.getElementById("mainPaddingAdd");
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navContainer.classList.add("sticky");
+                mainPaddingAdd.classList.add("mainPaddingAdd");
+              }
+              else {
+                navContainer.classList.remove("sticky");
+                mainPaddingAdd.classList.remove("mainPaddingAdd");
+                }
+            }
+    </script>
+        <footer>
+            <strong>Изоставени училища</strong> <br>
+            <strong> &copy; Теодор Хаджийски, Димитър Тагарев</strong>
+        </footer>
+    </body>
+</html>

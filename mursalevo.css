@@ -1,0 +1,33 @@
+#osnUchHrBotev{
+    width: 600px;
+    padding-right: 30px;
+}
+table{
+    margin: auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+table td {
+    border: 2px solid black; 
+    text-align: center;
+}
+table tr:first-child td {
+    border-top: 0;
+}
+table tr td:first-child {
+    border-left: 0;
+}
+table tr:last-child td {
+    border-bottom: 0;
+}
+table tr td:last-child {
+    border-right: 0;
+}
+#table1{
+    margin-top: 40px;
+    padding-top: 40px;
+}
+#table2{
+    margin: auto;
+    margin-top: 50px;
+}

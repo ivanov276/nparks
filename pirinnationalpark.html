@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" >
+        <meta name="description" content="Изоставени училища">
+        <meta name="keywords" content="Училища, изоставени, образование, обучение, ученици, учители">
+        <meta name="author" content="Teodor Hadzhiyski, Dimitar Tagarev">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" REL="stylesheet" href="style/style.css">
+        <link type="text/css" REL="stylesheet" href="style/buranovo.css">
+        <title>Pirin National Park</title>
+    </head>
+    <body>
+        <header>  
+            <div id="headerPicture">
+                <div id="slider">
+                    <figure>
+                        <img src="Picture/Dauto_vrah.jpg">
+                        <img src="Picture/ezerozalezpirin.jpg" height="300">
+                        <img src="Picture/Kamenitsa.jpg">
+                    </figure>
+                </div>
+            </div>
+            <div id="headerPictureFont">
+                <div id="slider">
+                    <figure>
+                        <img src="Picture/Dauto_vrah.jpg">
+                        <img src="Picture/ezerozalezpirin.jpg" height="300">
+                        <img src="Picture/Kamenitsa.jpg">
+                    </figure>
+                </div>
+            </div>
+            <div id= "navContainer"class="navContainer">
+                <div id="navBar">
+                    <div id="navButton" onclick="location.href='index.html'"><a href="javascript:void(0)">Home</a></div>
+                    <div id="navButton" onclick="location.href='centralbalkanpark.html'"><a href="javascript:void(0)">Central Balkan National Park</a></div>
+                    <div id="navButton" onclick="location.href='rilanationalpark.html'"><a href="javascript:void(0)">Rila National Park</a></div>
+                    <div id="navButton" onclick="location.href='pirinnationalpark.html'" class="onPageButton"><a href="javascript:void(0)">Pirin National Park</a></div>
+                </div>
+            </div>             
+        </header>
+        <main id="mainPaddingAdd">
+            
+            <h1>Pirin National Park</h1>
+            <table style="width: 100%;">
+                <tr><td>
+            <p id="text1">
+                Pirin National Park (Bulgarian: Национален парк "Пирин"), originally named Vihren National Park, covering the larger part of the Pirin Mountains in southwestern Bulgaria, spanning an area of 403.56 square kilometers (155.82 mi2).
+
+It is one of the three national parks in the country, the 
+others being Rila National Park and Central Balkan National Park. The park was established in 1962 and its territory was expanded several times since then. Pirin National Park was declared a UNESCO World Heritage Site in 1983. The elevation varies from 950 meters (3,120 ft) to 2,914 meters (9,560 ft) at Vihren, Bulgaria's second highest summit and the Balkans' third.
+
+The park is situated in Blagoevgrad Province, the nation's 
+southwesternmost region, on the territory of seven municipalities: Bansko, Gotse Delchev, Kresna, Razlog, Sandanski, Simitli, and Strumyani. There are no populated places within its territory. Two nature reserves are located within the boundaries of Pirin National Park: Bayuvi Dupki–Dzhindzhiritsa and Yulen. Bayuvi Dupki–Dzhindzhiritsa is among the oldest in Bulgaria, established in 1934 and is included in the World Network of Biosphere Reserves under the UNESCO Man and Biosphere Programme.[1]
+ The whole territory is part of the network of nature protection areas of the European Union, Natura 2000.
+            </p></td>
+            <td><img src="Picture/pirinmap.png" style="padding-left: 30px;"></td>
+            </tr>
+            </table>    
+            <br><br><br>
+           <h1>History And Administration</h1>
+           <br><br>
+           <table style="width: 100%;">
+            <tr>
+                <td id="text2Holder">
+                    <div id="text2">
+                        <p>
+                            Pirin National Park was established on 18 November 1962 in order to preserve the natural ecosystems and landscapes along with their plant and animal communities and habitats.[2][3] Originally named Vihren National Park, the protected area initially covered 67.36 km2. Its territory was expanded several times until it reached its current area of 403.56 km2 in 1999.[3][4] In 1983, Pirin National Park was added to the list of UNESCO World Heritage Sites as an area of outstanding natural importance.[5] By the Constitution of Bulgaria, the park is exclusively state-owned.[6]
+
+According to the classification of the International Union for Conservation of Nature the park falls within management category II (national park) with main objective protecting functioning ecosystems while allowing human visitation and its supporting infrastructure. The entire territory of the park is included in the European Union network of nature protection areas Natura 2000.[7] Pirin National Park is listed as an important bird and biodiversity area by BirdLife International.[8]
+                       </p>
+                    </div>
+                </td>
+                    <td><img src="Picture/Dautov_vrah.jpg"></td>
+                </tr>
+            </table>
+            <br><br><br><br>
+            <table id="tablePictures">
+                <tr>
+                    <td><img src="Picture/ezerozalezpirin.jpg"></td>
+                </tr>
+            </table>
+        </main>
+        <div class="mainBackground" style="margin-top: -1160px; height: 1195px;">
+        </div>
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navContainer = document.getElementById("navContainer");
+            var sticky = navContainer.offsetTop;
+            var mainPaddingAdd = document.getElementById("mainPaddingAdd");
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navContainer.classList.add("sticky");
+                mainPaddingAdd.classList.add("mainPaddingAdd");
+              }
+              else {
+                navContainer.classList.remove("sticky");
+                mainPaddingAdd.classList.remove("mainPaddingAdd");
+                }
+            }
+        </script>        
+        <footer>
+            <strong>Изоставени училища</strong> <br>
+            <strong> &copy; Теодор Хаджийски, Димитър Тагарев</strong>
+        </footer>
+    </body>
+</html>
