@@ -1,0 +1,40 @@
+table {
+    border-collapse: collapse;
+}
+table td {
+    border: 2px solid black; 
+}
+table tr:first-child td {
+    border-top: 0;
+}
+table tr td:first-child {
+    border-left: 0;
+}
+table tr:last-child td {
+    border-bottom: 0;
+}
+table tr td:last-child {
+    border-right: 0;
+}
+table td{
+    text-align: center;
+}
+#tablePictures{
+    margin:auto;
+    width: 90%;
+}
+#text1{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#text2{
+    margin: auto;
+    width: 700px;
+    text-align: left;
+    padding-right: 30px;
+}
+#text2Holder{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 800px;
+}
